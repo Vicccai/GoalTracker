@@ -5,7 +5,7 @@ from PIL import Image, ImageDraw, ImageFont
 import tkinter.messagebox
 
 PATH_TO_CURRENT_DIRECTORY = '/Users/victorcai/Desktop/VictorCai/Goals/'
-PATH_TO_SCREENSAVER = '/Users/victorcai/Desktop/ScreenSaver/screensaver.png'
+PATH_TO_SCREENSAVER = PATH_TO_CURRENT_DIRECTORY + 'ScreenSaver/screensaver.png'
 
 img = Image.new(mode = "RGB", size = (600, 300))
 fnt = ImageFont.truetype("/Library/Fonts/Arial Unicode.ttf", 30)
