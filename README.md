@@ -5,7 +5,7 @@ Here are steps to use this project for your own purposes (for Mac):
 
 1. Create a .plist file in ~/Library/LaunchAgents (a sample has been provided). Update the Program Arguments field to point to script.sh and your Python installation. Update the StartCalendarInterval field to indicate at which time you want launchd to run the script.
 
-2. Enter the command in command line: launchctl load ~/Library/LaunchAgents/wakeup.plist
+2. Enter the command in command line: launchctl load ~/Library/LaunchAgents/<your_plist_file_name>.plist
 
 3. Go to System Settings -> Privacy & Security -> Full Disk Access, and add bash so that it can access the necessary files.
 
