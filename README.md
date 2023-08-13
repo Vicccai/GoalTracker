@@ -5,10 +5,12 @@ Here are steps to use this project for your own purposes (for Mac):
 
 1. Create a .plist file in ~/Library/LaunchAgents (a sample has been provided). Update the Program Arguments field to point to script.sh and your Python installation. Update the StartCalendarInterval field to indicate at which time you want launchd to run the script.
 
-2. Go to System Settings -> Privacy & Security -> Full Disk Access, and add bash so that it can access the necessary files.
+2. Enter the command in command line: launchctl load ~/Library/LaunchAgents/wakeup.plist
 
-3. Go to System Settings -> Screen Saver, and choose an option (I am using Classic) that allows you to choose your own source for the screensaver. Click on Options... and set the source as the ScreenSaver folder in the repo.
+3. Go to System Settings -> Privacy & Security -> Full Disk Access, and add bash so that it can access the necessary files.
 
-4. In wakeup.py, update PATH_TO_CURRENT_DIRECTORY.
+4. Go to System Settings -> Screen Saver, and choose an option (I am using Classic) that allows you to choose your own source for the screensaver. Click on Options... and set the source as the ScreenSaver folder in the repo.
 
-5. In script.sh, update the command to be the absolute path of your Python installation and the repo.
+5. In wakeup.py, update PATH_TO_CURRENT_DIRECTORY.
+
+6. In script.sh, update the command to be the absolute path of your Python installation and the repo.
